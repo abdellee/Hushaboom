@@ -14,6 +14,8 @@ namespace OpenXmlCodeTester
     {
         public static string ConcatenateTest(this string source)
         {
+            // hello how are you
+            string str = source;
             return new StringBuilder(source).Append("Emad Repos").ToString();
         }
         public static string StringConcatenate<T>(this IEnumerable<T> source,
