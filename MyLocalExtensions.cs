@@ -16,7 +16,8 @@ namespace OpenXmlCodeTester
         {
             // hello how are you
             string str = source;
-            return new StringBuilder(source).Append("Emad Repos").ToString();
+            var len = source.Length;
+            return new StringBuilder(source).Append("Emad Repos").Append("String length= ").Append(len.ToString()).ToString();
         }
         public static string StringConcatenate<T>(this IEnumerable<T> source,
             Func<T, string> func)
