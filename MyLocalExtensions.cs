@@ -14,9 +14,10 @@ namespace OpenXmlCodeTester
     {
         public static string ConcatenateTest(this string source)
         {
-            // hello how are you
+            // hello how are you- this is edited from web ui
             string str = source;
-            return new StringBuilder(source).Append("Emad Repos").ToString();
+           
+            return new StringBuilder(source).Append("Emad Repos").Append("Eddy Edwards").ToString();
         }
         public static string StringConcatenate<T>(this IEnumerable<T> source,
             Func<T, string> func)
